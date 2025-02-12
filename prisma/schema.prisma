@@ -16,12 +16,12 @@ datasource db {
 }
 
 model Usuario {
-  id    String    @id @default("0123456789abcdef01234567") @map("_id") @db.ObjectId
+  id    String    @id @default(auto()) @map("_id") @db.ObjectId
   email String @unique
   name  String?
   nickname String?
 }
-
+// id    String    @id @default("0123456789abcdef01234567") @map("_id") @db.ObjectId
 // model User {
 //   id    Int    @id @default(autoincrement())
 //   email String @unique
