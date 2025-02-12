@@ -5,7 +5,7 @@ const prisma = new PrismaClient();
   try {
     const user = await prisma.usuario.create({
       data: {
-        email: 'fabricio@idt.com.py',
+        email: 'fabricio@test.com.py',
         name: 'Fabricio',
       },
     });
